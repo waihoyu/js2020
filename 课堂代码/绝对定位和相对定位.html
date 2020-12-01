@@ -1,0 +1,70 @@
+<!-- 
+    备课主题：绝对定位和相对定位。
+    备课时间：2020年10月24日
+    备课人：韦晓余
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <style >
+        body{
+            background-color: blueviolet;
+        }
+        .grandParent{
+            width: 700px;
+            height: 400px;
+            background-color: hotpink;
+            margin:100px;
+            position: relative;
+            
+        }
+        .parent {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            color:blue;
+            margin: 40px;
+            display: inline-block;
+        }
+        .parent2{
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            color:blue;
+            margin: 40px;
+            display: inline-block;
+        }
+        .son{
+            width: 40px;
+            height: 40px;
+            background-color: green;
+            position: absolute;
+            top: 5px;
+        }
+        .son2{
+            width: 40px;
+            height: 40px;
+            background-color: green;
+            position: relative;
+            top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grandParent">
+        <div class="parent">
+            <div class="son">
+            </div>
+        </div>
+        <div class="parent2">
+            <div class="son2">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

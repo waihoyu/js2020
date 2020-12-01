@@ -1,0 +1,242 @@
+/**
+  git config --global user.email "  "
+  git config --global user.name  "   "
+  git config --global user.name "你注册GitHub的用户名"
+  git config --global user.email "你注册GitHub的邮箱"
+  ssh-keygen -t rsa -C "你注册GitHub的邮箱"
+
+  C:\Users\WaiHoYu\.vscode\extensions\vscode-icons-team.vscode-icons-11.0.0
+
+  C:\Program Files\Microsoft VS Code\resources\app\out\vs\workbench\workbench.desktop.main.css
+
+2.右键vscode快捷方式，点击属性，找到“目标”，在原来的位置上添加新建文件夹的路径
+写法："D:\Microsoft VS Code\Code.exe" --extensions-dir G:\VS Code\extensions
+写法："D:\Microsoft VS Code\Code.exe" --extensions-dir G:\VS Code\extensions
+
+*/
+{
+    "easysass.targetDir": "css/", //路径
+    // "powermode.enabled": true,
+    // "powermode.presets": "fireworks",
+    "vetur.format.options.tabSize": 4,
+    "quokka.suppressExpirationNotifications": false,
+    "better-comments.multilineComments": true,
+    "better-comments.highlightPlainText": false,
+    "fileheader.Author": "WaiHoYu",
+    "fileheader.LastModifiedBy": "WaiHoYu",
+    "workbench.startupEditor": "newUntitledFile",
+    "pasteAndIndent.selectAfter": true,
+    "editor.minimap.enabled": false,
+    "jshint.enable": false,
+    "workbench.statusBar.feedback.visible": false,
+    "editor.fontFamily": "'Meslo LG M DZ for Powerline',Consolas,'Courier New', monospace",
+    // Set backgroundColor
+    "highlight-icemode.backgroundColor": "#D2FAB5",
+    // Set Border Color
+    "highlight-icemode.borderColor": "blue",
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "terminal.integrated.fontSize": 25,
+    "terminal.integrated.fontFamily": "'Meslo LG M DZ for Powerline',Consolas,'Courier New', monospace",
+    "guides.enabled": false,
+    "workbench.activityBar.visible": true, // 两个选择器中是否换行
+    "path-intellisense.mappings": {
+        "@": "${workspaceRoot}/src"
+    },
+    "extensions.ignoreRecommendations": true,
+    "workbench.colorCustomizations": {
+        "scrollbarSlider.background": "#d41313",
+        "scrollbarSlider.activeBackground": "#17a346",
+        "scrollbarSlider.hoverBackground": "#000",
+        "statusBar.background": "#1A1A1A",
+        "statusBar.noFolderBackground": "#0A0A0D",
+        "statusBar.debuggingBackground": "#511f1f",
+        "editorLineNumber.foreground": "#17a346",
+        "editorGutter.background": "#020230",
+        //"editorCursor.foreground": "#d41313",
+        // 顶部 tab 栏
+        "tab.border": "#2e2e2e",
+        "tab.activeBackground": "#2e2e2e",
+        "tab.activeForeground": "#cfcfcf",
+        "tab.activeBorder": "#5b99fcb9",
+        "tab.hoverBackground": "#2e2e2e",
+        "tab.hoverBorder": "#5b99fcb9",
+        "tab.inactiveForeground": "#8e8e8e",
+        // 标尺
+        "editorRuler.foreground": "#3f3f3f",
+        // 快捷提示窗口
+        "editorSuggestWidget.highlightForeground": "#7bfc5ba2",
+        "editorSuggestWidget.selectedBackground": "#333f5c",
+        // 单击一个词时，其它相同单词
+        "editor.selectionHighlightBackground": "#ffe7921c",
+        "editor.selectionBackground": "#434e61c9",
+        "editor.selectionHighlightBorder": "#90e97259",
+        // terminal 中的光标
+        "terminalCursor.background": "#A5A2A2",
+        "terminalCursor.foreground": "#A5A2A2",
+        // 侧边栏中一块区域的标题
+        //"sideBarSectionHeader.background": "#32363d",
+        "sideBarSectionHeader.background": "#c41212",
+        // 区域获取焦点时
+        "focusBorder": "#5b99fc36",
+        // "editor.background": "#1f1f2c",
+        // "editorGutter.background": "#1d1f2e"
+        "terminal.background": "#090300",
+        "terminal.foreground": "#A5A2A2",
+        "terminal.ansiBlack": "#090300",
+        "terminal.ansiBlue": "#01A0E4",
+        "terminal.ansiBrightBlack": "#5C5855",
+        "terminal.ansiBrightBlue": "#01A0E4",
+        "terminal.ansiBrightCyan": "#B5E4F4",
+        "terminal.ansiBrightGreen": "#01A252",
+        "terminal.ansiBrightMagenta": "#A16A94",
+        //"terminal.ansiBrightRed": "#DB2D20",
+        "terminal.ansiBrightWhite": "#F7F7F7",
+        "terminal.ansiBrightYellow": "#FDED02",
+        "terminal.ansiCyan": "#B5E4F4",
+        "terminal.ansiGreen": "#01A252",
+        "terminal.ansiMagenta": "#A16A94",
+        "terminal.ansiRed": "#DB2D20",
+        "terminal.ansiWhite": "#A5A2A2",
+        "terminal.ansiYellow": "#FDED02"
+    },
+    "workbench.sideBar.location": "left",
+    "search.followSymlinks": false,
+    "editor.wordWrap": "on",
+    "editor.tabSize": 4,
+    "files.autoSave": "afterDelay",
+    // Emmet 支持 react
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "terminal.integrated.shell.windows": "C:\\windows\\System32\\cmd.exe",
+    "window.zoomLevel": 0,
+    "emmet.syntaxProfiles": {
+        "vue-html": "html",
+    },
+    "python.jediEnabled": false,
+    "editor.formatOnType": false,
+    "editor.suggestSelection": "first",
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorWidth": 3,
+    "workbench.colorTheme": "Visual Studio Light",
+    "sync.forceUpload": true,
+    // vscode默认启用了根据文件类型自动设置tabsize的选项
+    "editor.detectIndentation": false,
+    // 重新设定tabsize
+    // "editor.tabSize": 2,
+    // #每次保存的时候自动格式化
+    "editor.formatOnSave": true,
+    // #让函数(名)和后面的括号之间加个空格
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    // 格式化stylus, 需安装Manta's Stylus Supremacy插件
+    "stylusSupremacy.insertColons": false, // 是否插入冒号
+    "stylusSupremacy.insertSemicolons": false, // 是否插入分好
+    "stylusSupremacy.insertBraces": false, // 是否插入大括号
+    "stylusSupremacy.insertNewLineAroundImports": false, // import之后是否换行
+    "stylusSupremacy.insertNewLineAroundBlocks": false, // 两个选择器中是否换行
+    "vscodePluginDemo.showTip": false,
+    "explorer.confirmDelete": false,
+    "launch": {
+        // Use IntelliSense to learn about possible attributes.
+        // Hover to view descriptions of existing attributes.
+        // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "type": "node",
+                "request": "launch",
+                "name": "Launch Program",
+                "program": "${file}"
+            }
+        ]
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        // html 中 style 属性里写 css 快速提示
+        "editor.quickSuggestions": {
+            "other": false,
+            "comments": false,
+            "strings": true
+        }
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[less]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // "[javascript]": {
+    //     "editor.defaultFormatter": "HookyQR.beautify"
+    // },
+    /*  prettier的配置 */
+    "prettier.tabWidth": 4,
+    // #去掉代码结尾的分号
+    // "prettier.semi": true,
+    // #使用带引号替代双引号
+    //"prettier.singleQuote": true,
+    "prettier.printWidth": 100, // 超过最大值换行
+    //"prettier.tabWidth": 4, // 缩进字节数
+    "prettier.useTabs": false, // 缩进不使用tab，使用空格
+    // "prettier.semi": true, // 句尾添加分号
+    "prettier.singleQuote": true, // 使用单引号代替双引号
+    "prettier.proseWrap": "preserve", // 默认值。因为使用了一些折行敏感型的渲染器（如GitHub comment）而按照markdown文本样式进行折行
+    "prettier.arrowParens": "avoid", //  (x) => {} 箭头函数参数只有一个时是否要有小括号。avoid：省略括号
+    "prettier.bracketSpacing": true, // 在对象，数组括号与文字之间加空格 "{ foo: bar }"
+    "prettier.disableLanguages": [
+        "vue"
+    ], // 不格式化vue文件，vue文件的格式化单独设置
+    "prettier.endOfLine": "auto", // 结尾是 \n \r \n\r auto
+    //"prettier.eslintIntegration": false, //不让prettier使用eslint的代码格式进行校验
+    "prettier.htmlWhitespaceSensitivity": "ignore",
+    "prettier.ignorePath": ".prettierignore", // 不使用prettier格式化的文件填写在项目的.prettierignore文件中
+    "prettier.jsxBracketSameLine": false, // 在jsx中把'>' 是否单独放一行
+    "prettier.jsxSingleQuote": false, // 在jsx中使用单引号代替双引号
+    //"prettier.parser": "babylon", // 格式化的解析器，默认是babylon
+    "prettier.requireConfig": false, // Require a 'prettierconfig' to format prettier
+    //"prettier.stylelintIntegration": false, //不让prettier使用stylelint的代码格式进行校验
+    "prettier.trailingComma": "es5", // 在对象或数组最后一个元素后面是否加逗号（在ES5中加尾逗号）
+    //"prettier.tslintIntegration": false, // 不让prettier使用tslint的代码格式进行校验
+    "editor.fontSize": 28,
+    "explorer.confirmDragAndDrop": false,
+    //"vetur.format.defaultFormatter.js": "vscode-typescript",
+    //"vetur.format.defaultFormatter.html": "prettier",
+    "vetur.format.defaultFormatter.js": "prettier",
+    "vetur.validation.template": false,
+    "vetur.format.defaultFormatter.html": "prettier",
+    "vetur.format.defaultFormatter.less": "prettier",
+    "vetur.format.defaultFormatterOptions": {
+        "prettier": {
+            "printWidth": 160,
+            "singleQuote": true, // 使用单引号
+            "semi": true, // 末尾使用分号
+            "tabWidth": 4,
+            "arrowParens": "avoid",
+            "bracketSpacing": true,
+            "proseWrap": "preserve" // 代码超出是否要换行 preserve保留
+        }
+    },
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "python.languageServer": "Microsoft",
+    "python.showStartPage": false,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.runInTerminal": true,
+    "terminal.integrated.inheritEnv": false,
+    "python.pythonPath": "/Users/Mac/opt/anaconda3/bin/python",
+    "editor.semanticTokenColorCustomizations": null
+}

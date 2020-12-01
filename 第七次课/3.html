@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1 {
+            background-color: rgb(0, 60, 128, .8);
+            width: 40px;
+            height: 40px;
+            /* position: absolute; */
+            left: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1" class="boxclass">
+
+    </div>
+
+    <!-- <br>
+    <br>
+    <br> -->
+
+    <div>
+        <input type="button" id="btn1" value="移动">
+    </div>
+
+    <script>
+        var target = document.getElementById("btn1");
+        target.onclick = function () {
+            var topValue = document.getElementById("box1").style.top;
+            var leftValue = document.getElementById("box1").style.left;
+
+            topValue = topValue.replace("px", "")
+            topValue = Number(topValue) + 5;
+
+            leftValue = leftValue.replace("px", "")
+            leftValue = Number(leftValue) + 5;
+            document.getElementById("box1").style.top = topValue + "px";
+            document.getElementById("box1").style.left = leftValue + "px";
+        }
+    </script>
+</body>
+
+</html>

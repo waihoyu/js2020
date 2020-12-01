@@ -1,0 +1,106 @@
+<!-- 
+    备课主题：动画初步教学
+    备课时间：2020年10月27日
+    备课人：韦晓余
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画初级之圆形旋转</title>
+    <style>
+        body {
+            background-color: chartreuse;
+        }
+
+        .box {
+            background: radial-gradient(circle at 100px 10px, rgb(212, 207, 179), red);
+            width: 200px;
+            height: 200px;
+            /* border: 1px solid blue; */
+            border-radius: 50%;
+            position: absolute;
+            left: 60%;
+            top: 50%;
+            margin-left: -250px;
+            margin-top: -100px;
+            text-align: center;
+            animation: boxAnimation1 3s  linear -1s infinite;
+        }
+
+        .box:hover {
+            animation: boxAnimation 1s  -1s infinite;
+        }
+        .son {
+            background: radial-gradient(circle at 100px 10px, gold, black);
+            width: 50px;
+            height:50px;
+            border: 1px solid blue;
+            border-radius: 50%;
+            position: absolute;
+            left: 60%;
+            top: 50%;
+            margin-left: -151px;
+            margin-top: -100px;
+            text-align: center;
+            animation: sonAnimation 2s  linear  infinite;
+        }
+
+        @keyframes boxAnimation {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            25% {
+                -webkit-transform: rotate(90deg);
+            }
+
+            50% {
+                -webkit-transform: rotate(180deg);
+            }
+
+            75% {
+                -webkit-transform: rotate(270deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes sonAnimation {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            25% {
+                -webkit-transform: rotate(90deg);
+            }
+
+            50% {
+                -webkit-transform: rotate(180deg);
+            }
+
+            75% {
+                -webkit-transform: rotate(270deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="son">
+
+        </div>
+    </div>
+</body>
+
+</html>

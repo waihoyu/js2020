@@ -1,0 +1,65 @@
+<!-- 
+    备课内容：浮动
+    备课时间：2020年11月13日
+    备课人：韦晓余
+    /* 第一种方法
+    border: 1px solid transparent;*/
+    /* 第二种方法
+    overflow: hidden;*/
+    /* 第三种方法
+    display: inline-block;*/
+    /* 第四种方法
+    padding-top: 1px;*/
+    /* 第五种方法
+    在子元素添加浮动
+    float: left;*/
+    /*
+    第六种方法
+    外层元素添加 before 伪类 display: table;
+    */
+
+    bfc的作用1.清除浮动对页面布局的影响。 2.避免盒子之间的margin重叠
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <style>
+        #wrapper{
+            border: 10px solid black;
+            /* overflow: hidden; */
+            /* border: 1px solid transparent; */
+            /* display: inline-block; */
+            /* position: absolute; */
+        }
+        #right,#middle,#left{
+            width: 40px;
+            height: 40px;
+            /* float: left; */
+            margin: 20px;
+        }
+        #right{
+                background-color: yellow;
+        }
+        #middle{
+            background-color: green;
+            border: 1px solid rgba(0,0,0,0); /*添加一个透明边框*/
+        }
+        #left{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="right"></div>
+        <div></div>
+        <div id="middle"></div>
+        <div id="left"></div>
+    </div>
+
+</body>
+</html>

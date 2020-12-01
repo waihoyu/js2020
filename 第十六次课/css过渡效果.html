@@ -1,0 +1,40 @@
+<!-- 
+    备课内容：过渡
+    备课时间：2020年11月13日
+    备课人：韦晓余
+    transition: property duration timing-function delay;
+    一、语法
+
+    transition: property duration timing-function delay 
+    transition属性是个复合属性，她包括以下几个子属性：
+    transition-property ：规定设置过渡效果的css属性名称
+    transition-duration ：规定完成过渡效果需要多少秒或毫秒
+    transition-timing-function ：指定过渡函数，规定速度效果的速度曲线
+    transition-delay ：指定开始出现的延迟时间
+ -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            background-color:red;
+            width: 200px;
+            height: 100px;
+            transform: scale(0.2) rotate(20deg);
+            
+        }
+        #main:hover{
+            transition: width ease 5s 2s;
+            width: 500px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="main"></div>
+</body>
+</html>
