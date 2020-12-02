@@ -1,22 +1,20 @@
-function Haw(name,price,origin){
-    this.name = name;
-    this.price = price;
-    this.origin = origin;
-    this.printName = function (){
-        console.log("this is Haw")
+function Person(name,sex,age,address){
+    this.name= name,
+    this.sex = sex,
+    this.age =age,
+    this.address = address,
+    this.sayName=function(){
+        console.log(this.name)
     }
 }
 
-Haw.prototype.printPrice = function(){
-    console.log("prototype print Price")
+Person.prototype.sayName2 = function(){
+    console.log("this is say name 2")
 }
 
-// Haw()
 
-var h1 = new Haw("山楂",2,"河南省");
-h1.printName2 = function(){
-
-}
-h1.name = "山楂2"
-
-console.log(h1.__proto__)
+var p1 = new Person("张三",'男',20,"南昌市")
+console.log(p1);
+console.log(p1.__proto__);
+p1.sayName()
+p1.sayName2()
