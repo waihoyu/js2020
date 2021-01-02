@@ -1,0 +1,43 @@
+npm install --global vue-cli  –registry=https://registry.npm.taobao.org
+
+npm install -g cnpm –registry=https://registry.npm.taobao.org
+
+//https://www.cnblogs.com/fron-tend/p/9755188.html
+
+
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+npm install vue -g
+
+npm install --global vue-cli  –registry=https://registry.npm.taobao.org
+
+npm install vue-router -g  –registry=https://registry.npm.taobao.org
+
+vue init webpack vue01 
+
+
+// 设置 淘宝镜像源
+npm config set registry https://registry.npm.taobao.org
+// 查看 使用的 镜像源
+npm config get registry// 安装 淘宝镜像源
+
+
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+
+清除缓存
+npm cache clean --force
+
+再安装
+
+npm install
+
+
+2，http-server方法
+
+命令一：npm install http-server -g 全局
+
+命令二：http-server
+
+npm install less-loader@4.1.0 --save
+

@@ -1,5 +1,3 @@
 
-console.log(Math.floor(Math.random()*70));
-
-
+console.log(Math.floor(Math.random()*60));
 

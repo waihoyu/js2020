@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>动画和变形练习</title>
+</head>
+<style>
+
+    /* 第二个部分 */
+    
+    .content {
+        width: 500px;
+        height: 300px;
+        /* overflow: hidden; */
+    }
+    
+    .imgs img {
+        width: 500px;
+        height: 300px;
+    }
+    
+    .imgs {
+        width: 1100px;
+        height: 300px;       
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .imgs:hover {
+        transition: all 3s;
+        margin-left: -500px;
+    }
+   
+</style>
+
+<body>
+  
+
+    <!-- 第二部分 -->
+
+    <div class="content">
+        <div class="imgs">
+            <img src="img/1.png" alt="">
+            <img src="img/2.png" alt="" class="show">
+        </div>
+    </div>
+    <hr>
+   
+</body>
+
+</html>

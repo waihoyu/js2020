@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery表单验证</title>
+    <script
+        src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <style>
+        div1 {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+
+        .high {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <form action="" id="myform">
+            <div> 
+                <label for="" id="lab1">姓名：</label>
+                <input type="text" id="myname" class="required">
+            </div>
+            <div> 
+                <label for="" id="lab2">密码：</label>
+                <input type="text" id="mypassword" class="required">
+            </div>
+            <div> 
+                <label for="" id="lab3">邮箱：</label>
+                <input type="text" id="myemail" class="">
+            </div>
+        </form>
+    </div>
+    <script>
+       
+        $("form :input.required").each(function () {
+            var $newrequired = $("<strong class='high'>*</strong>")
+            $(this).parent().append($newrequired);
+        })
+
+    </script>
+</body>
+
+</html>
