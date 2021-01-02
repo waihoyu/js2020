@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1 {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 400px;
+            top: 200px;
+        }
+
+        #box2 {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 100px;
+            top: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1" class="box" style="left:400px">
+    </div>
+    <div id="box2" class="box">
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <input type="button" id="btn1" value="请点击我">
+    <script>
+        window.onclick = function () {
+            var target = document.getElementById("btn1");
+            target.onclick = function () {
+                var leftValue = document.getElementsByClassName("box")[0].style.left;
+                console.log(leftValue);
+                //leftValue = leftValue.replace("px", "");
+                leftValue = Number(leftValue) + 5;
+                document.getElementById("box1").style.left = leftValue + "px";
+            }
+
+        }
+        window.onbeforeunload = function () {
+            alert("123");
+        }
+    </script>
+</body>
+
+</html>

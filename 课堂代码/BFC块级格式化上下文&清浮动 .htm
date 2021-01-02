@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFC块级格式化上下文 </title>
+    <style>
+        body{
+            background-color: green;
+        }
+        .box1{
+            background-color: red;
+            width: 300px;
+            /* height: 100px; */
+            /* overflow: hidden; */
+            clear: both;
+        }
+
+        .clearfix:after{/*伪元素是行内元素 正常浏览器清除浮动方法*/
+            content: "";
+            display: block;
+            height: 0;
+            clear:both;
+            visibility: hidden;
+        }
+        .apple,.orange,.banana,.peach,.lemon{
+            width: 30px;
+            height: 30px;
+            background-color: yellow;
+            margin: 5px;
+            border: 2px solid black;
+            
+            
+        }
+        .apple{
+            float: right;
+            /* margin:20px; */
+            position: absolute;
+            left:50px;
+        }
+        .orange{
+            background-color: white;
+            float:right;
+            
+        }
+        .banana{
+            background-color: blue;
+            float:right;
+        }
+        .peach{
+            background-color: black;
+            float:right;
+        }
+        .lemon{
+            background-color: olive;
+            float:right;
+            
+        }
+        .clear{
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1 clearfix1">
+        <div class="apple"></div>
+        <div class="orange"></div>
+        <div class="banana"></div>
+        <div class="peach"></div>
+        <div class="lemon"></div>
+        <div class="clear">清浮动增加的方法</div>
+    </div>
+</body>
+</html>

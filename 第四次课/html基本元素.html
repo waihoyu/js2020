@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html基本元素</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <div>
+        用户名：<input type="text" name="username" value="" />
+        密码：<input type="password" name="password" value="" />
+    </div>
+
+
+    <input type="radio" name="sex" value="1" />男
+    <input type="radio" name="sex" value="0" />女
+
+    <input type="checkbox" name="love" value="music" /> 听音乐
+    <input type="checkbox" name="love" value="movie" /> 看电影
+    <input type="checkbox" name="love" value="game" /> 玩游戏
+
+    普通按钮：<input type="button" name="btn" value="确定" />
+    提交按钮：<input type="submit" name="submit" value="提交" />
+    重置按钮：<input type="reset" name="reset" value="重置" />
+    图片按钮：<input type="image" name="img_btn" src="URL" />
+
+    <input type="hidden" name="uid" value="10" />
+
+    <input type="file" name="photo" />
+
+    手机号码：<input type="number" name="phone" />
+
+    <input type="color" name="color" />
+
+    <input type="date" name="date" />
+    <input type="time" name="time" />
+    <input type="datetime-local" name="datetime-local""/>
+    <input type=" month" name="month" />
+    <input type="week" name="week" />
+    <input type="email" name="email" />
+    <input type="range" min="0" max="10" value="0" />
+    <input type="search" name="search" />
+    <input type="submit" name="submit" value="搜索" />
+    <input type="url" name="url" />
+    <input type="submit" name="submit" value="提交" />
+    <input type="search" name="keywords" autocompulete="on">
+    <input type="submit" name="submit" value="提交" />
+    <input type="search" name="keywords" autofocus="on" />
+    <input type="submit" name="submit" value="提交" />
+    用户名：<input type="text" name="username" placeholder="请输入用户名..." />
+    *<input type="text" name="username" required />
+    <input type="submit" name="submit" value="提交" />
+    <input list="book" placeholder="请输入..." />
+
+    <datalist id="book">
+        <option value="HTML">
+        <option value="CSS">
+    </datalist>
+
+    <textarea name="content" rows="5" cols="50"> </textarea>
+
+    <select name="city">
+        <option value="0">请选择</option>
+        <option value="dg">东莞</option>
+        <option value="gz">广州</option>
+    </select>
+
+    <select name="city">
+        <optgroup label="主要城市">
+            <option value="1">广州</option>
+            <option value="2">北京</option>
+        </optgroup>
+        <optgroup label="其他城市">
+            <option value="3">深圳</option>
+            <option value="4">珠海</option>
+        </optgroup>
+    </select>
+
+    <input type="radio" name="sex" value="1" id="male" />
+    <label for="male">男</label>
+    <input type="radio" name="sex" value="0" id="female" />
+    <label for="female">女</label>
+    <input type="text">
+
+
+
+</body>
+
+</html>

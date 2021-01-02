@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery的基本用法</title>
+    <style>
+
+    </style>
+    <script
+        src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+1
+    </div>
+    <script>
+        $("div").css("background","red");
+        $("div").css("width","100px");
+        $("div").css("height","100px");
+        $("div").click(function(){
+           
+            if($("div").css("background-color") == "rgb(255, 0, 0)"){
+                $("div").css("background","yellow");
+                // alert($("div").css("background-color"))
+            }else if($("div").css("background-color") == "rgb(255, 255, 0)"){
+                $("div").css("background","red");
+                
+            }
+        })
+    </script>
+</body>
+
+</html>

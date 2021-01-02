@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单验证</title>
+    <style>
+        #myform {
+            border:5px solid red;
+            width: 400px;
+
+        }
+        #tip1, #tip2{
+            font-size: 12px;
+            color:red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myform">
+        <p> <label for="">用户名：</label>
+            <input type="text" id="username" name="username">
+            <span id="tip1"></span>
+        </p>
+        <p>
+            <label for="">密码：</label>
+            <input type="text" id="password" name="password">
+            <span id="tip2"></span>
+        </p>
+    </div>
+    <script>
+        var userna= document.getElementById("username")
+        var passwo= document.getElementById("password")
+        userna.onblur= function(){
+            var _username= userna.value
+            
+            if(_username!=""){
+                if(_username.length<8){
+                    // alert("123");
+                    document.getElementById("tip1").innerHTML="用户名长度不能低于8位。"
+                }
+            }else{
+                document.getElementById("tip1").innerHTML="用户名长度不能低于8位。"
+                return;
+            }
+        }
+        passwo.onblur= function(){
+            var _password= passwo.value
+            if(_password!=""){
+                if(_password.length<6){
+                    // alert("123");
+                    document.getElementById("tip2").innerHTML="密码长度不能低于6位。"
+                }
+            }else{
+                document.getElementById("tip2").innerHTML="密码长度不能低于6位。"
+                return;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

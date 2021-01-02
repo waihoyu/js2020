@@ -1,0 +1,89 @@
+<!-- 
+https://www.jb51.net/article/191170.htm
+
+
+
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>很多个按钮</title>
+    <script>
+        function init(){
+           setTimeout(function(){
+            document.body.style.backgroundColor="red";
+           },3000)
+        }
+    </script>
+</head>
+<body  onload="init()">
+    
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button>10</button>
+    <button>11</button>
+    <button>12</button>
+    <button>13</button>
+    <button>14</button>
+    <button>15</button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <script>
+        var targets = document.getElementsByTagName("button");
+        for (let s = 0; s < targets.length; s++) {
+            const element = targets[s];
+            element.onclick= function(){
+                alert("我被点击了");
+            }           
+        }
+        document.onkeydown=function(event){
+            var e = event || window.event
+            alert(e.key);
+        }
+    </script>
+</body>
+</html>

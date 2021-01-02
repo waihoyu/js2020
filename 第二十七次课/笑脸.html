@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>笑脸</title> 
+<style> 
+#myDIV {
+    width: 1000px;
+    height: 500px;
+    background: red url('smiley3.gif') no-repeat top left/5px 5px;
+    background-size:497px 287px;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  0% { background: #c00; }
+  50% { background: orange; }
+  100% { background: yellowgreen; }
+}
+</style>
+</head>
+<body>
+
+
+<div id="myDIV"></div>
+
+
+
+</body>
+</html>

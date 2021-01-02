@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3高级立方体</title>
+	<style>
+		.wrap {
+            /* background-color: black; */
+			width: 200px;
+			margin: 0 auto;
+			/*设置视角*/
+			-webkit-perspective: 800;
+			-webkit-transition: all 1s linear;
+			/*如果不设置默认为无限远的距离，设置不同的视角大小，指的是距离物体的px值。将视角设置不同的层级上面也会有不同的效果*/
+ 
+		}
+		.cube {
+			position: relative;
+			width: 200px;
+			height: 200px;
+			margin: 200px auto 0;
+			transform-style: preserve-3d;
+			/*-webkit-transform: rotateX(30deg) rotateY(75deg);*/
+			animation: bg-change 10s linear infinite ;
+			/*通常是放在父级 将变形的样式设置为3d样式 infinite*/
+		}
+		.wrap:hover .cube div:nth-child(1){
+			transform: rotateY(0deg) translateZ(0px);
+		}
+		.wrap:hover .cube div:nth-child(2){
+			transform: rotateY(180deg) translateZ(40px);
+			
+		}
+		.wrap:hover .cube div:nth-child(3){
+			transform: rotateY(0deg) translateZ(80px);
+			
+		}
+		.wrap:hover .cube div:nth-child(4){
+			transform: rotateY(0deg) translateZ(120px);
+		}
+		.wrap:hover .cube div:nth-child(5){
+			transform: rotateX(180deg) translateZ(160px);
+		}
+		.wrap:hover .cube div:nth-child(6){
+			transform: rotateX(360deg) translateZ(200px);
+		}
+		.cube div {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 200px;
+			height: 200px;
+			/*-webkit-backface-visibility: hidden; *//*背部隐藏，解决透视效果*/
+			
+		}
+		@keyframes bg-change {
+			from {
+				-webkit-transform: rotateX(0deg) rotateY(0deg);
+			}
+			to {
+				-webkit-transform: rotateX(360deg) rotateY(360deg);
+			}
+		}
+		/*前后面*/
+		.cube div:nth-child(1){
+			/* background: url(../images/1.png) center center no-repeat; */
+            background-color:darkgoldenrod;
+			/* background-size: contain; */
+			transform: translateZ(1px);
+			/* transition: all 1s linear; */
+		}
+		.cube div:nth-child(2){
+			/* background: url(../images/2.png) center center no-repeat;
+             */
+            background-color: green;
+			background-size: contain;
+			-webkit-transform: rotateY(180deg) translateZ(100px);
+			-webkit-transition: all 1s linear;
+		}
+		/*左右面*/
+		.cube div:nth-child(3){
+			/* background: url(../images/3.png) center center no-repeat;
+             */
+             background-color: yellow;
+			background-size: contain;
+			-webkit-transform: rotateY(90deg) translateZ(100px);
+			-webkit-transition: all 1s linear;
+		}
+		.cube div:nth-child(4){
+			/* background: url(../images/4.png) center center no-repeat;
+             */
+             background-color: blue;
+			background-size: contain;
+			-webkit-transform: rotateY(-90deg) translateZ(100px);
+			-webkit-transition: all 1s linear;
+		}
+		/*上下面*/
+		.cube div:nth-child(5){
+			/* background: url(../images/5.png) center center no-repeat;
+             */
+             background-color: purple;
+			background-size: contain;
+			-webkit-transform: rotateX(90deg) translateZ(100px);
+			-webkit-transition: all 1s linear;
+		}
+		.cube div:nth-child(6){
+			/* background: url(../images/6.png) center center no-repeat;
+             */
+             background-color: brown;
+			background-size: contain;
+			-webkit-transform: rotateX(-90deg) translateZ(100px);
+			-webkit-transition: all 1s linear;
+		}
+        .cube div{
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            line-height: 200px;
+            font-family: serif;
+        }
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="cube">
+			<div>江</div>
+			<div>西</div>
+			<div>软</div>
+			<div>件</div>
+			<div>大</div>
+			 <div>学</div>
+		</div>
+	</div>
+	<script></script>
+</body>
+</html>

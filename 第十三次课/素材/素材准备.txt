@@ -1,0 +1,17 @@
+背景颜色：background-color  rgb(34 , 119 , 223)
+登录 字体的设置：
+color: #a0a0a0;
+font-size: 28px;
+font-weight: 400;
+line-height: 33px;
+手机验证码登录：
+    color: rgb(34 , 121 , 223);
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+小图标：
+    background: url(../img/icons.png)no-repeat;
+    width: 15px;
+    height: 21px;
+    background-position: -210px -400px;
+    margin-top: -1px;

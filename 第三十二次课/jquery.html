@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文档</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <style>
+        #wrapper1{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left:100px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="wrapper1">
+        我是一个div id 是  
+        wrapper1
+    </div>
+    <div id="wrapper2">
+        江西省
+    </div>
+
+    <script>
+        //1、 <!-- 如何增加一个元素呢 -->
+        // $("#wrapper1").append($("<span>江西软件大学</span>"))
+        //2、 <!-- 如何在前面增加一个元素 -->
+        // $("#wrapper1").prepend($("<span>江西软件大学</span>"))
+        //3、 $ 本质是什么呢？
+        console.log(typeof $)
+        console.log(typeof $().click())
+        // 4、 remove 掉
+        // $("#wrapper2").remove();
+
+        // 5、处理事件的3种方式是什么呢？
+        document.getElementById("wrapper1").addEventListener("click",function(){
+            // alert("this is  onclick")
+        });
+        //6、 鼠标的进入事件
+        document.getElementById("wrapper1").addEventListener("mouseenter",function (event){
+            document.getElementById("wrapper2").innerHTML = event.x  + " | " + event.y;
+            document.getElementById("wrapper1").style.left=event.x + "px"
+           
+            document.getElementById("wrapper1").style.top= event.y + "px"
+        })
+        //7、 鼠标的滚动事件
+       window.addEventListener("mousemove",function (event){
+            document.getElementById("wrapper2").innerHTML = "(" + event.x  + " | " + event.y + ")" ;
+            console.log(event.x + "px");
+            document.getElementById("wrapper1").style.left=event.x + "px"           
+            document.getElementById("wrapper1").style.top= event.y + "px"
+        })
+        
+        // 8、addClass() 和 removeClass() 的使用方法
+
+        //9、动画要讲一讲
+
+        //10、  列表也要讲一下。  表格也要讲一下。
+        //11、
+
+
+
+    </script>
+    
+</body>
+</html>

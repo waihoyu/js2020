@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <style>
+        #wrapper{
+            background: blue;
+            width:100px;
+            height: 100px;
+            position: relative;
+        }
+
+    </style>
+</head>
+<body onclick="loadNew">
+    <div id="wrapper">
+
+    </div>
+    <script>
+        function loadNew(){
+            console.log("this is loadNew")
+        }
+        window.onclick = function (){
+
+        }
+        window.addEventListener("click",function(){
+            console.log("this is click")
+        })
+        // window.onclick=function(){}
+       
+        window.addEventListener("mousemove",function(event){
+            document.getElementById("wrapper").style.left= event.clientX + "px"
+            document.getElementById("wrapper").style.top= event.clientY + "px"
+            // document.getElementById("wrapper").style.backgroundColor= "red"
+            // console.log(event.x + " | " + event.y)
+            // console.log(event.clientX + " * " + event.clientY)
+            // document.body.style.backgroundColor ="red"
+        })
+        window.onmousedown = function(){
+            console.log("this is mouseenter")
+            document.getElementById("wrapper").style.backgroundColor= "purple"
+            console.log("this is mouseenter")
+        }
+        // window.addEventListener("mouseenter",function(){
+        //     console.log("this is mouseenter")
+        //     document.getElementById("wrapper").style.backgroundColor= "red"
+        //     console.log("this is mouseenter")
+        // })
+        var target = document.getElementById("wrapper");
+        window.addEventListener("mouseout",function(){
+            console.log("this is mouseout")
+            target.style.backgroundColor= "green"
+            target.style.left=0;
+            target.style.top=0;
+        })
+        
+
+    </script>
+</body>
+</html>
